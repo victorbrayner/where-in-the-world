@@ -6,6 +6,8 @@ export const useCountryStore = defineStore("country", {
   state: () => ({
     allCountries: [],
     searchedCountries: [],
+    openDetails: false,
+    country: {},
   }),
   getters: {},
   actions: {
