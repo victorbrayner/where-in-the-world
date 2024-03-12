@@ -2,10 +2,14 @@
   <router-view />
 </template>
 
-<script>
-import { defineComponent } from 'vue'
+<script setup>
+import { onMounted } from 'vue'
+import { useCountryStore } from './stores/country'
 
-export default defineComponent({
-  name: 'App'
+const store = useCountryStore()
+
+onMounted(() => {
+  store.fetchCountries()
 })
+
 </script>
