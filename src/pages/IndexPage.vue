@@ -3,11 +3,14 @@
 
     <SearchBar />
 
+    <CountriesCards />
+
   </q-page>
 </template>
 
 <script setup>
 import SearchBar from 'src/components/SearchBar.vue'
+import CountriesCards from 'src/components/CountriesCards.vue'
 
 </script>
 

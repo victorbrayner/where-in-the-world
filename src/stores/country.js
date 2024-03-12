@@ -28,5 +28,8 @@ export const useCountryStore = defineStore("country", {
     clearSearch() {
       this.searchedCountries = this.allCountries.slice(0, 25);
     },
+    setCountry(country) {
+      this.country = country;
+    },
   },
 });
