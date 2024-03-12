@@ -1,17 +1,19 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
+  <q-page class="page flex q-pt-xl">
+
+    <SearchBar />
+
   </q-page>
 </template>
 
-<script>
-import { defineComponent } from 'vue'
+<script setup>
+import SearchBar from 'src/components/SearchBar.vue'
 
-export default defineComponent({
-  name: 'IndexPage'
-})
 </script>
+
+<style scoped lang="scss">
+.body--light .page{
+  background-color: #fafafa;
+  color: hsl(209, 23%, 22%);
+}
+</style>

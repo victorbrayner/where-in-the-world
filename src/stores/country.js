@@ -25,5 +25,8 @@ export const useCountryStore = defineStore("country", {
       const json = await res.json();
       this.searchedCountries = json;
     },
+    clearSearch() {
+      this.searchedCountries = this.allCountries.slice(0, 25);
+    },
   },
 });
